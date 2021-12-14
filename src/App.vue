@@ -1,11 +1,16 @@
 <template>
-  <div>
-    <h1 class="font-bold text-3xl text-green-400">Hello World</h1>
+  <div class="flex items-center justify-center min-h-screen">
+    <my-button label="Hello World" secondary rounded />
   </div>
 </template>
 
 <script>
+import MyButton from "@/components/MyButton.vue";
+
 export default {
-  name: 'App'
-}
+  name: "App",
+  components: {
+    MyButton,
+  },
+};
 </script>

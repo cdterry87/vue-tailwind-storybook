@@ -1,9 +1,9 @@
 require('../styles/main.css');
 
-import MyButton from '../components/Button.vue';
+import MyButton from '../components/MyButton.vue';
 
 export default {
-  title: 'Example/Button',
+  title: 'Example/MyButton',
   component: MyButton,
   argTypes: {
     label: { control: 'text' },

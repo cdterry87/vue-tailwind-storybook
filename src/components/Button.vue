@@ -44,9 +44,11 @@ export default {
       classes: computed(() => ({
         "rounded-full": props.rounded,
         rounded: !props.rounded,
-        "bg-purple-700 text-white border border-purple-800": props.secondary,
-        "bg-gray-200 text-gray-600 border border-gray-300": props.tertiary,
-        "bg-blue-500 text-white border border-blue-600":
+        "bg-indigo-500 text-white border border-indigo-600 shadow-indigo-500/50 ":
+          props.secondary,
+        "bg-cyan-500 text-white border border-cyan-600 shadow-cyan-500/50":
+          props.tertiary,
+        "bg-blue-500 text-white border border-blue-600 shadow-blue-500/50":
           !props.secondary && !props.tertiary, // primary
       })),
     };
